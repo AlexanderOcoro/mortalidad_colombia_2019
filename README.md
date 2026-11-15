@@ -17,6 +17,9 @@ Esta aplicación web dinámica desarrollada en Python utiliza (Dash) y (Plotly) 
 ## Objetivo
 Facilitar la exploración visual intuitiva de patrones demográficos, causas de defunción, distribución regional y disparidades por género y ciclo de vida en la población colombiana durante 2019.
 
+![app mortalidad](img/app_mortalidad.png)
+Muestra el total de defunciones por departamento en 2019. Los picos más altos (tonos rojo oscuro, superando los 30,000 casos) evidencian los principales centros poblados del país, mientras que el resto de regiones reflejan menor concentración de registros vitales.
+
 ## Estructura del Proyecto
 ```text
 mortalidad_colombia_2019/
@@ -30,4 +33,3 @@ mortalidad_colombia_2019/
 ├── requirements.txt         # Dependencias del proyecto
 └── README.md                # Documentación del proyecto
 
-![Descripción de la imagen](img/app_mortalidad.png)
