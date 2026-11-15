@@ -111,7 +111,7 @@ app.layout = html.Div(style={'backgroundColor': '#f4f6f7', 'padding': '30px', 'f
     # --- FOOTER---
     html.Div([
         html.Hr(style={'borderColor': '#bdc3c7', 'marginBottom': '15px'}),
-        html.P("Desarrollado por: Ing. Alexander Ocoró Lerma | Aplicaciones I - Maestría en Inteligencia Artificial", 
+        html.P("Ing. Alexander Ocoró Lerma | Aplicaciones I - Maestría en Inteligencia Artificial", 
                style={'textAlign': 'center', 'color': '#7f8c8d', 'fontSize': '14px', 'fontWeight': 'bold'})
     ], style={'marginTop': '40px', 'paddingBottom': '20px'})
 ])
