@@ -7,6 +7,48 @@ John Alexander Ocoro Lerma
 
 https://mortalidad-colombia-2019.onrender.com (Nota: Al estar alojada en el plan gratuito de Render, si el servidor se encuentra inactivo, la primera carga puede tomar unos segundos en despertar).
 
+# ¿Cómo funciona la Aplicación?
+
+Esta plataforma web interactiva opera bajo una arquitectura basada en Python, utilizando Dash y Plotly para el procesamiento y la renderización visual de los microdatos del DANE (Estadísticas Vitales de Mortalidad 2019).
+
+# Carga de los datos:
+
+Al iniciar, el sistema lee y normaliza de forma automatizada los archivos en formato Excel (NoFetal2019.xlsx, CodigosDeMuerte.xlsx y Divipola.xlsx) utilizando Pandas.
+
+# Motor Gráfico:
+
+Agrupa, filtra y procesa las variables demográficas, espaciales y temporales para generar dinámicamente 7 componentes visuales interactivos (mapas de barras departamentales, tendencias mensuales, análisis de violencia, causas de defunción, distribución por sexo y ciclos de vida por grupos etarios).
+
+# Interfaz Web:
+
+Se ejecuta mediante un servidor local (o en la nube a través de Gunicorn y Render), permitiendo al usuario interactuar con tablas de datos y gráficos vectoriales responsivos en tiempo real.
+
+# Instalación y ejecucción local:
+
+Sigue estos pasos para clonar el repositorio y ejecutar la aplicación en tu entorno de desarrollo local (como Visual Studio Code):
+
+# 1. Clonar el repositorio
+
+Abre tu terminal y ejecuta el siguiente comando:
+git clone https://github.com/AlexanderOcoro/mortalidad_colombia_2019.git
+cd mortalidad_colombia_2019
+
+# 2. Crear y activar un entorno virtual
+
+python -m venv .venv
+
+# 3. Instalar las dependencias
+
+pip install -r requirements.txt
+
+# 4. Ejecutar la aplicación
+
+Inicia el servidor local de desarrollo de Dash:
+
+python app.py
+
+Una vez ejecutado, abre tu navegador web e ingresa a la dirección: [http://127.0.0.1:8050/]para visualizar la plataforma en funcionamiento.
+
 # Enlace al repositorio del proyecto en GitHub:
 
 https://github.com/AlexanderOcoro/mortalidad_colombia_2019
