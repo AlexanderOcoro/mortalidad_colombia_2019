@@ -30,3 +30,4 @@ mortalidad_colombia_2019/
 ├── requirements.txt         # Dependencias del proyecto
 └── README.md                # Documentación del proyecto
 
+![Descripción de la imagen](img/app_mortalidad.png)
