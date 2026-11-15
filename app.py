@@ -106,7 +106,14 @@ app.layout = html.Div(style={'backgroundColor': '#f4f6f7', 'padding': '30px', 'f
             style_header={'backgroundColor': '#2c3e50', 'color': 'white', 'fontWeight': 'bold'},
             style_cell={'textAlign': 'left', 'padding': '12px', 'backgroundColor': 'white'}
         )
-    ], style={'backgroundColor': 'white', 'padding': '20px', 'borderRadius': '8px', 'boxShadow': '0px 0px 10px rgba(0,0,0,0.05)'})
+    ], style={'backgroundColor': 'white', 'padding': '20px', 'borderRadius': '8px', 'boxShadow': '0px 0px 10px rgba(0,0,0,0.05)', 'marginBottom': '30px'}),
+
+    # --- FOOTER---
+    html.Div([
+        html.Hr(style={'borderColor': '#bdc3c7', 'marginBottom': '15px'}),
+        html.P("Desarrollado por: Ing. Alexander Ocoró Lerma | Aplicaciones I - Maestría en Inteligencia Artificial", 
+               style={'textAlign': 'center', 'color': '#7f8c8d', 'fontSize': '14px', 'fontWeight': 'bold'})
+    ], style={'marginTop': '40px', 'paddingBottom': '20px'})
 ])
 
 if __name__ == '__main__':
